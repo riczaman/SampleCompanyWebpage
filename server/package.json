@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Ricky Zaman",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
