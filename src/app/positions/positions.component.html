@@ -1,0 +1,27 @@
+<div class="center">
+  <h2>Positions</h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+  </div>
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+    <div class="table-responsive">
+      <table class="table table-condensed table-hover">
+        <thead>
+          <th>Position Title</th>
+          <th>Position Description</th>
+          <th>Salary</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pt of positions" (click)="routePosition(pt._id)">
+            <td>{{pt.PositionName}}</td>
+            <td>{{pt.PositionDescription}}</td>
+            <td>${{pt.PositionBaseSalary | number:'.2'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+  </div>

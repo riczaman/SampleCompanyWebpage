@@ -1,0 +1,29 @@
+<div class="center">
+  <h2>Employees</h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+  </div>
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+      <input class="form-control" id="EmployeeSearch" name="EmployeeSearch" type="text" placeholder="Search Employees by Full Name or Position" (keyup)="onEmployeeSearchKeyUP($event)" /><br />
+    <div class="table-responsive">
+      <table class="table table-condensed table-hover">
+        <thead>
+          <th>Full Name</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>Hire Date</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employeedata of filteredEmployees" (click)="routeEmployee(employeedata._id)">
+            <td>{{employeedata.FirstName}} {{employeedata.LastName}}</td>
+            <td>{{employeedata.AddressStreet}}. {{employeedata.AddressState}}, {{employeedata.AddressCity}}. {{employeedata.AddressZip}}</td>
+            <td>{{employeedata.PhoneNum}} ext: {{employeedata.Extension}}</td>
+            <td>{{employeedata.HireDate | date:'longDate'}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  </div>
