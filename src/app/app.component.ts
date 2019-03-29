@@ -4,7 +4,7 @@
  * assignment has been copied manually or electronically from any other source (including web sites) or 
  * distributed to other students.  
  * Name: Ricky Zaman   Student ID: 121942171   Date: March 28, 2019
- * Heroku Link: _______________________________________________________________ * 
+ * Heroku Link: _______________________________________________________________ 
  * ********************************************************************************/
 
 import { Component } from '@angular/core';
